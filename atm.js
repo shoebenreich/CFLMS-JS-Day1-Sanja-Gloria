@@ -8,18 +8,24 @@ let counterTwenty = 0;
 let ten = 10;
 let counterTen = 0;
 
+counterHundred = Math.floor(sum / hundred);
 
-counterHundred = Math.floor(sum/hundred)
+counterFifty = Math.floor((sum % hundred) / fifty);
 
-counterFifty = Math.floor((sum%hundred)/fifty)
+counterTwenty = Math.floor((sum % fifty) / twenty);
 
-counterTwenty = Math.floor((sum%fifty)/twenty)
+counterTen = (sum - counterHundred * hundred - counterFifty * fifty - counterTwenty * twenty) / ten;
 
-counterTen = (sum - (counterHundred*hundred) - (counterFifty*fifty) - (counterTwenty*twenty))/ten
-
-
-
-console.log(counterHundred)
-console.log(counterFifty)
-console.log(counterTwenty)
-console.log(counterTen)
+console.log(
+	'You want to withdraw ' +
+		sum +
+		' €. You are getting' +
+		counterHundred +
+		'x100€ bills, ' +
+		counterFifty +
+		'x€50 Bills, ' +
+		counterTwenty +
+		'x€20 Bills, and ' +
+		counterTen +
+		'x€10 Bills.'
+);
