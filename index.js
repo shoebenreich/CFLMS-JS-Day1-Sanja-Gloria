@@ -13,3 +13,7 @@ animals.sort();
 console.log(animals);
 animals.unshift('cat');
 console.log(animals);
+
+let fruits = ["mango", "cherries", "kiwi", "grapes", "pear", "peach", "orange", "lemon"];
+
+document.write(fruits.join("<br>"))
