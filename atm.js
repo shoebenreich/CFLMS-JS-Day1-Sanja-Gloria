@@ -19,13 +19,27 @@ counterTen = (sum - counterHundred * hundred - counterFifty * fifty - counterTwe
 console.log(
 	'You want to withdraw ' +
 		sum +
-		' €. You are getting' +
+		' €. You are getting ' +
 		counterHundred +
-		'x100€ bills, ' +
+		' x 100€ Bills, ' +
 		counterFifty +
-		'x€50 Bills, ' +
+		' x €50 Bills, ' +
 		counterTwenty +
-		'x€20 Bills, and ' +
+		' x €20 Bills, and ' +
 		counterTen +
-		'x€10 Bills.'
+		' x €10 Bills.'
+);
+
+document.write(
+	'You want to withdraw ' +
+		sum +
+		' €. You are getting ' +
+		counterHundred +
+		' x 100€ Bills, ' +
+		counterFifty +
+		' x €50 Bills, ' +
+		counterTwenty +
+		' x €20 Bills, and ' +
+		counterTen +
+		' x €10 Bills.'
 );
